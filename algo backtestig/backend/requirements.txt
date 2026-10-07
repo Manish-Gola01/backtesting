@@ -1,0 +1,13 @@
+# Phase 3 runtime deps: SQLAlchemy + Alembic + psycopg (PostgreSQL driver).
+# SQLite is used for local verification (ships with Python); PostgreSQL via
+# DATABASE_URL in production (docker-compose.yml).
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+pydantic>=2.7
+pydantic-settings>=2.4
+python-multipart>=0.0.9
+pandas>=2.2
+numpy>=1.26
+sqlalchemy>=2.0
+alembic>=1.13
+psycopg[binary]>=3.1

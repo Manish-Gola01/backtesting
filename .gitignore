@@ -1,0 +1,33 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Env / secrets ---
+.env
+*.local
+
+# --- Node / frontend ---
+node_modules/
+dist/
+*.tsbuildinfo
+
+# --- Data uploads (user-provided market data is not committed) ---
+uploads/
+backend/uploads/
+
+# --- Databases / runtime artifacts ---
+*.sqlite3
+*.log
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

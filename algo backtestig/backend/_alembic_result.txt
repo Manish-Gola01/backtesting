@@ -1,0 +1,4 @@
+offline --sql exit=0, CREATE TABLE count=9, CREATE INDEX count=4
+online upgrade head exit=0 | tables=['alembic_version', 'backtest_equity', 'backtest_metrics', 'backtest_trades', 'backtests', 'historical_data', 'instruments', 'strategies', 'users']
+downgrade base exit=0 | remaining=['alembic_version']
+re-upgrade head exit=0
